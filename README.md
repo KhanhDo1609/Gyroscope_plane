@@ -2,7 +2,7 @@
 
 A small **3D arcade flight game** built with **Three.js**, controlled either by your keyboard or by tilting a motion sensor connected to an **Arduino Uno**. Fly over low-poly islands and mountains, steer through glowing rings, and earn points.
 
-**Project status:** The playable browser game and Arduino source code are in this repository. Screenshot and recorded video assets are prepared for upload; their links below will work once the two files are added to `media/`. GitHub Pages must be enabled once to publish the online playable demo.
+**Project status:** Game, Arduino code, wiring diagram and demo page are committed. The screenshot, animated GIF and MP4 need to be uploaded to `media/` for the inline previews and download links to work. GitHub Pages must be enabled to publish the online demo.
 
 ## 🎮 Play the demo
 
@@ -11,6 +11,18 @@ A small **3D arcade flight game** built with **Three.js**, controlled either by 
 To publish: Repository **Settings → Pages → Build and deployment → Deploy from a branch → main → / (root) → Save**. Wait for GitHub to finish deploying.
 
 Visitors can play **with a keyboard only**; no Arduino is required. Arduino motion control works in a supported desktop Chrome browser with a connected board, using Web Serial.
+
+## 🔌 Arduino wiring diagram
+
+![Arduino Uno and motion sensor I2C wiring](media/wiring-diagram.svg)
+
+[Download wiring diagram](media/wiring-diagram.svg)
+
+## 🎞️ Auto-playing gameplay GIF
+
+![SkyFlight gameplay animated preview](media/skyflight-gameplay-preview.gif)
+
+[Download gameplay GIF](media/skyflight-gameplay-preview.gif)
 
 ## 📷 Screenshot
 
@@ -91,7 +103,7 @@ Gyroscope_plane/
 │   └── WHO_AM_I_Check/             # Identify sensor chip
 ├── docs/WIRING.md                  # Wiring + troubleshooting
 ├── demo.html                       # Video player + download page
-├── media/                          # Add screenshot + gameplay MP4
+├── media/                          # Wiring SVG; add screenshot, GIF, MP4
 └── README.md
 ```
 
