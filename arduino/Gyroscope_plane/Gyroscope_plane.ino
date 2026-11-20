@@ -1,3 +1,4 @@
+
 #include <Wire.h>
 #include <math.h>
 
@@ -87,6 +88,7 @@ void loop() {
           sqrt((float)ay * ay + (float)az * az))
     * 180.0 / PI;
 
+  // Gyroscope: 131 LSB per degree/second
   float gyroRoll = gx / 131.0;
   float gyroPitch = gy / 131.0;
 
@@ -96,6 +98,7 @@ void loop() {
   pitch = 0.98 * (pitch + gyroPitch * dt)
         + 0.02 * accelPitch;
 
+  // Send CSV to Chrome
   Serial.print(roll, 2);
   Serial.print(",");
   Serial.println(pitch, 2);

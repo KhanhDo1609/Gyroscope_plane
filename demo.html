@@ -1,17 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>SkyFlight — Gameplay & Video</title>
-<style>
-:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#101e2a;color:#f1f7fb;font-family:system-ui,-apple-system,sans-serif}main{max-width:980px;margin:auto;padding:40px 20px}h1{font-size:clamp(2rem,5vw,3.5rem);margin-bottom:10px}p{color:#b8cbd7;line-height:1.6}.btn{display:inline-block;background:#ffc35b;color:#1c2c35;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:750;margin:6px 10px 8px 0}section{margin:30px 0;padding:20px;background:#192c3b;border:1px solid #365166;border-radius:16px}video,img{display:block;width:100%;border-radius:10px;background:#0c1822}video{aspect-ratio:16/9}img{height:auto}.sub{font-size:.92rem}a{color:#b4e8ff}h2{margin-top:0}
-</style></head>
-<body><main>
-<h1>✈️ SkyFlight</h1>
-<p>Fly through rings in a 3D arcade world. Play instantly using your keyboard, or connect an Arduino motion controller through Chrome Web Serial.</p>
-<a class="btn" href="./index.html">▶ Play the game</a>
-<a class="btn" href="./media/skyflight-demo.mp4" download="skyflight-demo.mp4">↓ Download gameplay video</a>
-<section><h2>Watch the flight instantly</h2><img src="./media/skyflight-gameplay-preview.gif" alt="Animated preview of SkyFlight gameplay" loading="eager"><p class="sub">Animated GIF plays automatically without clicking.</p></section><section><h2>Gameplay recording</h2><video controls preload="metadata" playsinline poster="./media/skyflight-gameplay.png"><source src="./media/skyflight-demo.mp4" type="video/mp4">Your browser does not support HTML5 video. <a href="./media/skyflight-demo.mp4">Open the video file</a>.</video><p class="sub">Video and poster are loaded from the repository's media folder.</p></section>
-<section><h2>Arduino wiring</h2><img src="./media/wiring-diagram.svg" alt="Arduino Uno and motion sensor I2C wiring diagram" loading="lazy"><p><a href="./media/wiring-diagram.svg" download>Download wiring diagram</a></p></section><section><h2>Screenshot</h2><img src="./media/skyflight-gameplay.png" alt="SkyFlight low-poly airplane game with glowing rings, islands, mountains, and Arduino controller panel" loading="lazy"><p><a href="./media/skyflight-gameplay.png" download>Download screenshot</a> · <a href="./media/skyflight-gameplay-preview.gif" download>Download GIF</a></p></section>
-<p><a href="https://github.com/KhanhDo1609/Gyroscope_plane">View source code and Arduino setup instructions on GitHub</a></p>
-</main></body></html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Watch a 35-second SkyFlight gameplay demo and see the Arduino controller wiring.">
+  <title>SkyFlight | Gameplay demo</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: system-ui, sans-serif;
+      background: #101e2a;
+      color: #f1f7fb;
+    }
+    body { margin: 0; }
+    main { max-width: 960px; margin: auto; padding: 3rem 1.25rem; }
+    h1 { font-size: clamp(2.25rem, 7vw, 4rem); line-height: 1; margin: 0; }
+    h2 { margin-top: 0; }
+    p { color: #bfd1dc; line-height: 1.55; }
+    a { color: #b4e8ff; }
+    .play {
+      display: inline-block;
+      padding: .65rem 1rem;
+      background: #ffc35b;
+      color: #102231;
+      border-radius: .5rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .links { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; }
+    section { margin-top: 2rem; }
+    video, img { display: block; width: 100%; height: auto; border-radius: .75rem; }
+    video { aspect-ratio: 2048 / 1032; background: #0c1822; }
+    footer { margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>SkyFlight</h1>
+      <p>Fly through glowing rings with your keyboard or an Arduino motion controller.</p>
+      <nav class="links" aria-label="Game and video">
+        <a class="play" href="./index.html">Play SkyFlight</a>
+        <a href="./media/skyflight-demo.mp4" download>Download MP4</a>
+      </nav>
+    </header>
+
+    <section aria-labelledby="recording">
+      <h2 id="recording">Gameplay demo · 35 seconds</h2>
+      <video controls playsinline preload="metadata" poster="./media/skyflight-gameplay.png">
+        <source src="./media/skyflight-demo.mp4" type="video/mp4">
+        <a href="./media/skyflight-demo.mp4">Open the MP4</a>
+      </video>
+    </section>
+
+    <section aria-labelledby="screenshot">
+      <h2 id="screenshot">Gameplay screenshot</h2>
+      <a href="./media/skyflight-gameplay.png">
+        <img src="./media/skyflight-gameplay.png" width="2048" height="1032" loading="lazy"
+          alt="A yellow plane flies toward glowing rings above low-poly islands in SkyFlight.">
+      </a>
+    </section>
+
+    <section aria-labelledby="wiring">
+      <h2 id="wiring">Arduino controller wiring</h2>
+      <a href="./media/wiring-diagram.svg">
+        <img src="./media/wiring-diagram.svg" width="1100" height="600" loading="lazy"
+          alt="Arduino Uno connections to the motion sensor through ground, SDA on A4 and SCL on A5.">
+      </a>
+    </section>
+
+    <footer>
+      <a href="https://github.com/KhanhDo1609/Gyroscope_plane">Source code and Arduino setup</a>
+    </footer>
+  </main>
+</body>
+</html>
