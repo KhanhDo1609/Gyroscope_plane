@@ -6,7 +6,7 @@ A small **3D arcade flight game** built with **Three.js**, controlled either by 
 
 ## 🎮 Play the demo
 
-**[Open the SkyFlight browser demo](https://khanhdo1609.github.io/Gyroscope_plane/)** *(requires GitHub Pages to be enabled)*
+**[Play SkyFlight in your browser](https://khanhdo1609.github.io/Gyroscope_plane/)** · **[Gameplay video and download page](https://khanhdo1609.github.io/Gyroscope_plane/demo.html)** *(both require GitHub Pages to be enabled)*
 
 To publish: Repository **Settings → Pages → Build and deployment → Deploy from a branch → main → / (root) → Save**. Wait for GitHub to finish deploying.
 
@@ -20,7 +20,7 @@ Visitors can play **with a keyboard only**; no Arduino is required. Arduino moti
 
 Once `media/skyflight-demo.mp4` is uploaded, viewers can **[watch the gameplay video](media/skyflight-demo.mp4)** or **[download the MP4](https://github.com/KhanhDo1609/Gyroscope_plane/raw/refs/heads/main/media/skyflight-demo.mp4)**. On GitHub, the MP4 file page may also show a built-in video player.
 
-For a video player directly on the deployed website, open [the gameplay video](media/skyflight-demo.mp4) from the demo page. Browser playback depends on supported codecs.
+The [demo page](demo.html) includes an HTML5 video player and a Download Video button after the MP4 has been uploaded. Browser playback depends on supported codecs.
 
 ## 🧰 Hardware and wiring
 
@@ -90,6 +90,7 @@ Gyroscope_plane/
 │   ├── I2C_Scanner/                # Check I2C connection
 │   └── WHO_AM_I_Check/             # Identify sensor chip
 ├── docs/WIRING.md                  # Wiring + troubleshooting
+├── demo.html                       # Video player + download page
 ├── media/                          # Add screenshot + gameplay MP4
 └── README.md
 ```
