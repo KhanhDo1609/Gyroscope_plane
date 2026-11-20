@@ -26,7 +26,7 @@ SkyFlight is a 3D arcade flight game built with Three.js. Steer a yellow plane t
 
 You’ll need an Arduino Uno, an MPU6500-compatible motion sensor, jumper wires and a USB data cable.
 
-![Arduino Uno and motion sensor wiring diagram](media/wiring-diagram.svg)
+[![Arduino Uno wired to a breadboard-mounted motion sensor](media/wiring-screenshot.png)](media/wiring-screenshot.png)
 
 Match the power and I²C signal levels to your specific sensor breakout. See the [wiring and troubleshooting guide](docs/WIRING.md) for pin assignments and sensor identification.
 
